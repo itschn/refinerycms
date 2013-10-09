@@ -20,8 +20,9 @@ Gem::Specification.new do |s|
   s.files             = `git ls-files`.split("\n")
   s.test_files        = `git ls-files -- spec/*`.split("\n")
 
-  s.add_dependency 'refinerycms-core',  version
-  s.add_dependency 'actionmailer',      rails_version
-  s.add_dependency 'devise',            '~> 3.0.2'
-  s.add_dependency 'friendly_id',       '>= 5.0.0.rc1'
+  s.add_dependency 'refinerycms-core',      version
+  s.add_dependency 'actionmailer',          rails_version
+  s.add_dependency 'devise',                '~> 3.0.2'
+  s.add_dependency 'friendly_id',           '>= 5.0.0.rc1'
+  s.add_dependency 'friendly_id-globalize', '>= 1.0.0.alpha.1'
 end

@@ -2,23 +2,10 @@ source 'https://rubygems.org'
 
 gemspec
 
-gem 'rails', '~> 4.0.0'
-gem 'friendly_id', github: 'norman/friendly_id', branch: 'master'
-gem 'friendly_id-globalize', github: 'norman/friendly_id-globalize', branch: 'master'
 gem 'refinerycms-i18n', github: 'refinery/refinerycms-i18n', branch: 'master'
 gem 'quiet_assets'
 
-# Add support for refinerycms-acts-as-indexed
-gem 'refinerycms-acts-as-indexed', github: 'refinery/refinerycms-acts-as-indexed'
-
 gem 'protected_attributes'
-gem 'seo_meta', github: 'parndt/seo_meta', branch: 'master'
-
-# Fixes uniqueness constraint on translated columns.
-# See: https://github.com/svenfuchs/globalize3/pull/121
-gem 'globalize3', github: 'svenfuchs/globalize3', branch: 'rails4'
-gem 'paper_trail', github: 'airblade/paper_trail', branch: 'master'
-gem 'awesome_nested_set', github: 'collectiveidea/awesome_nested_set', branch: 'master'
 
 # Database Configuration
 unless ENV['TRAVIS']
