@@ -40,11 +40,6 @@ if Refinery::Page.where(:menu_match => "^/$").empty?
   end
 end
 
-puts '#######################################'
-puts Refinery::I18n.frontend_locales.inspect
-puts '#######################################'
-
-
 Refinery::I18n.frontend_locales.each do |lang|
   I18n.locale = lang
   {'home' => "Home",
