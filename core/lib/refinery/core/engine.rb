@@ -88,7 +88,7 @@ module Refinery
           "wymeditor/skins/refinery/*",
           "wymeditor/skins/refinery/**/*",
           "modernizr-min.js",
-          "admin.js"
+          "backend.js"
         ]
       end
 
