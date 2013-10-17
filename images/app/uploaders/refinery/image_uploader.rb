@@ -38,6 +38,10 @@ module Refinery
     version :thumb do
       process resize_to_fit: [135, 135]
     end
+    
+    version :mormal do
+      process resize_to_fit: [205, 205]
+    end
 
     # Add a white list of extensions which are allowed to be uploaded.
     # For images you might use something like this:

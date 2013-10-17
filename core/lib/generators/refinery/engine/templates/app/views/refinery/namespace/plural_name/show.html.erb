@@ -8,7 +8,7 @@
     <h1><%= attribute.name.titleize %></h1>
     <p>
 <% if attribute.type.to_s == 'image' -%>
-      <%%= image_fu @<%= singular_name %>.<%= attribute.name %>, nil %>
+      <%%= image_tag @<%= singular_name %>.<%= attribute.name %>.url %>
 <% elsif attribute.type.to_s == 'resource' -%>
       <%% if @<%= singular_name %>.<%= attribute.name %>.present? %>
         <%%= link_to <%= "'#{attribute.name}'" %>, @<%= singular_name %>.<%= attribute.name %>.url %>
