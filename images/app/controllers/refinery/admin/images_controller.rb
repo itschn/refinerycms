@@ -40,11 +40,11 @@ module Refinery
       def create
         @images = []
         begin
-          unless params[:image].present? and params[:image][:image].is_a?(Array)
+          unless params[:image].present? and params[:image][:file].is_a?(Array)
             @images << (@image = ::Refinery::Image.create(params[:image]))
           else
-            params[:image][:image].each do |image|
-              @images << (@image = ::Refinery::Image.create({:image => image}.merge(params[:image].except(:image))))
+            params[:image][:file].each do |image|
+              @images << (@image = ::Refinery::Image.create({:file => image}.merge(params[:image].except(:file))))
             end
           end
         rescue Dragonfly::FunctionManager::UnableToHandle
