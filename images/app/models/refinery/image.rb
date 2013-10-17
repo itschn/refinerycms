@@ -8,6 +8,10 @@ module Refinery
 
     validates :file, presence: true
     
+    def thumbnail
+      file.url(:thumb)
+    end
+    
     def image_name
       self[:file]
     end
