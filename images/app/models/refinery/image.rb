@@ -35,7 +35,11 @@ module Refinery
         end
       end
     end
-
+    
+    def image_name
+      [:file]
+    end
+    
     # Get a thumbnail job object given a geometry and whether to strip image profiles and comments.
     def thumbnail(options = {})
       if options.is_a?(String) || options.is_a?(Symbol)
