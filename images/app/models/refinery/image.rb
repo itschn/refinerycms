@@ -8,6 +8,8 @@ module Refinery
 
     validates :file, presence: true
     
+    delegate :url, to: :file
+    
     def thumbnail(options = {})
       file.url(:thumb)
     end
