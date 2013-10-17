@@ -8,7 +8,7 @@ module Refinery
 
     validates :file, presence: true
     
-    def thumbnail
+    def thumbnail(options = {})
       file.url(:thumb)
     end
     
