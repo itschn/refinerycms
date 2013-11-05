@@ -9,6 +9,7 @@ module Refinery
     require 'refinery/pages/type'
     require 'refinery/pages/types'
     require 'refinery/pages/url'
+    require 'refinery/pages/caching'
 
     # Load configuration last so that everything above is available to it.
     require 'refinery/pages/configuration'
